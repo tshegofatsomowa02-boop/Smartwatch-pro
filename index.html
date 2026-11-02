@@ -6,15 +6,23 @@
   <title>Smartwatch Pro | Advertisement</title>
   <meta name="description" content="Smartwatch Pro advertisement page showcasing the features and lifestyle benefits of the smartwatch." />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-bar">
-      <div class="brand">
+      <div class="brand" aria-label="Smartwatch Pro home">
         <span class="brand-mark">S</span>
         <span>Smartwatch Pro</span>
       </div>
-      <nav class="main-nav">
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
         <a href="about_us.html">About Us</a>
         <a href="contat.html">Contact</a>
@@ -46,35 +54,43 @@
         </div>
 
         <div class="hero-visual">
-          <img
-            src="all%20in%20one.jpg"
-            alt="Smartwatch on a wrist"
-          />
+          <div class="device-card">
+            <img src="all%20in%20one.jpg" alt="Smartwatch Pro on a wrist" />
+            <div class="floating-badge badge-top">7-Day Battery</div>
+            <div class="floating-badge badge-bottom">Heart Ready</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="feature-band" id="features">
-      <div class="container feature-grid">
-        <div class="feature-box">
-          <span class="icon">1</span>
-          <h3>Heart Rate</h3>
-          <p>Real-time monitoring with smart alerts.</p>
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">WHY PEOPLE LOVE IT</p>
+          <h2>Everything you need, beautifully packed into one wearable.</h2>
         </div>
-        <div class="feature-box">
-          <span class="icon">2</span>
-          <h3>GPS Tracking</h3>
-          <p>Run, ride, and walk with accurate route data.</p>
-        </div>
-        <div class="feature-box">
-          <span class="icon">3</span>
-          <h3>Long Battery</h3>
-          <p>Power through the day and beyond.</p>
-        </div>
-        <div class="feature-box">
-          <span class="icon">4</span>
-          <h3>Waterproof</h3>
-          <p>Built to handle workouts and rainy adventures.</p>
+
+        <div class="feature-grid">
+          <article class="feature-box">
+            <span class="icon">01</span>
+            <h3>Heart Rate</h3>
+            <p>Real-time monitoring with smart alerts that help you stay informed and in control.</p>
+          </article>
+          <article class="feature-box">
+            <span class="icon">02</span>
+            <h3>GPS Tracking</h3>
+            <p>Run, ride, and walk with accurate route data and stronger performance insights.</p>
+          </article>
+          <article class="feature-box">
+            <span class="icon">03</span>
+            <h3>Long Battery</h3>
+            <p>Power through the day, the gym, and the evening without stress or charging delays.</p>
+          </article>
+          <article class="feature-box">
+            <span class="icon">04</span>
+            <h3>Waterproof</h3>
+            <p>Built to handle workouts, rain, and everyday movement with confidence.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -82,7 +98,7 @@
     <section class="showcase">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">WHY PEOPLE LOVE IT</p>
+          <p class="eyebrow">FEATURED DEVICE</p>
           <h2>Smart technology made to fit your everyday routine.</h2>
         </div>
 
@@ -90,10 +106,7 @@
           <div class="product-card product-card-main">
             <div class="product-badge">Featured Watch</div>
             <div class="product-image-block">
-              <img
-                src="watch.jpg"
-                alt="Smartwatch product display"
-              />
+              <img src="watch.jpg" alt="Smartwatch Pro X product display" />
             </div>
             <div class="product-specs">
               <h3>Smartwatch Pro X</h3>
@@ -102,6 +115,7 @@
                 <span>Bright Display</span>
                 <span>Fitness Tracking</span>
                 <span>Call Alerts</span>
+                <span>Sleep Monitor</span>
               </div>
               <div class="ad-note">
                 <strong>Made for movement.</strong>
@@ -118,6 +132,10 @@
             <div class="info-card alt">
               <h3>Easy Everyday Use</h3>
               <p>Stay connected with notifications, messages, and reminders that help your day run smoother.</p>
+            </div>
+            <div class="info-card accent-card">
+              <h3>Premium Design</h3>
+              <p>Lightweight, comfortable, and modern enough for work, workouts, and everything in between.</p>
             </div>
           </div>
         </div>
@@ -157,6 +175,60 @@
         </div>
       </div>
     </section>
+
+    <section class="benefit-strip">
+      <div class="container benefit-grid">
+        <div class="benefit-box">
+          <span>01</span>
+          <h3>Wellness First</h3>
+          <p>Monitor your heartbeat, sleep cycles, and recovery in a smart, simple way.</p>
+        </div>
+        <div class="benefit-box">
+          <span>02</span>
+          <h3>Built for Movement</h3>
+          <p>GPS, fitness tracking, and goal-driven features help you stay consistent.</p>
+        </div>
+        <div class="benefit-box">
+          <span>03</span>
+          <h3>Life Ready</h3>
+          <p>Stay connected with alerts, reminders, and a durable, elegant design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">CUSTOMER STORIES</p>
+          <h2>People are already wearing better habits into every day.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>“I wanted a watch that looked good and actually helped me stay on track. This does both.”</p>
+            <h4>— Nia, Fitness Coach</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>“The battery lasts and the reminders are genuinely useful for busy workdays.”</p>
+            <h4>— Daniel, Creative Director</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>“The design feels premium, and the health features make it easy to stay motivated.”</p>
+            <h4>— Lethabo, Student Athlete</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-box">
+        <div>
+          <p class="eyebrow">MAKE IT SMARTER</p>
+          <h2>Upgrade your routine with Smartwatch Pro today.</h2>
+        </div>
+        <a href="contat.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -172,7 +244,7 @@
         <a href="about_us.html">About Us</a>
         <a href="contat.html">Contact</a>
       </div>
-      <p>© 2026 Smartwatch Pro</p>
+      <p>© <span id="year">2026</span> Smartwatch Pro</p>
     </div>
   </footer>
 </body>
